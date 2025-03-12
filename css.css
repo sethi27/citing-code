@@ -1,0 +1,74 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: rgb(250, 180, 200);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #FFE4E8;  /* Light pink background */
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Controls container */
+.controls {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+    display: flex;
+    gap: 20px;
+}
+
+/* Button styles */
+.control-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.control-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.control-btn:active {
+    transform: translateY(0);
+}
+
+/* Button variants */
+.cool {
+    background-color: #17becf;
+}
+
+.warm {
+    background-color: #ff7f0e;
+}
+
+.random {
+    background-color: #9467bd;
+}

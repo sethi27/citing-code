@@ -1,0 +1,40 @@
+<!--
+    TUTORIAL SOURCES AND MODIFICATIONS:
+    This HTML file combines elements needed for both tutorials:
+    - Tutorial 1: 3D Orbit Control (https://p5js.org/examples/3d-orbit-control.html)
+    - Tutorial 2: Color Linear Gradient (https://p5js.org/tutorials/color-gradients/)
+
+    MY MODIFICATIONS:
+    1. Added control buttons for color schemes
+    2. Separated styling into CSS file
+    3. Organized structure for better maintainability
+    4. Added proper meta tags and descriptions
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Orbit Control with Colors</title>
+    
+    <!-- P5.js library for 3D graphics and interactions -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    
+    <!-- Custom styles for layout and controls -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!-- Control buttons container -->
+    <div class="controls">
+        <!-- Color scheme control buttons -->
+        <!-- Each button has both a unique ID (for JavaScript) and classes (for CSS styling) -->
+        <button id="coolBtn" class="control-btn cool">Cool Colors</button>
+        <button id="warmBtn" class="control-btn warm">Warm Colors</button>
+        <button id="randomBtn" class="control-btn random">Random Colors</button>
+    </div>
+
+    <!-- Main p5.js sketch file -->
+    <script src="sketch.js"></script>
+</body>
+</html>
